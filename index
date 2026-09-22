@@ -3,10 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Scheidenkleister</title>
+  <title>Scheidenkleister – Feminist Black Metal aus Graz</title>
+  <meta name="description" content="Scheidenkleister – Feminist Black Metal aus Graz, seit 2017.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --schwarz: #000000;
+      --knochen: #e8e4dc;
+      --asche: #8a857d;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--schwarz);
+      color: var(--knochen);
+      font-family: "Cormorant Garamond", Garamond, "Times New Roman", serif;
+      font-size: 1.25rem;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+    }
+
+    /* Schriftzug */
+    .schriftzug {
+      display: block;
+      width: 100%;
+      max-width: 40rem;
+      height: auto;
+      margin: 0 auto 3rem;
+    }
+
+    /* Bandfoto: Ränder laufen weich ins Schwarz aus */
+    figure {
+      margin: 0 auto 3.5rem;
+      max-width: 34rem;
+    }
+
+    .bandfoto {
+      display: block;
+      width: 100%;
+      height: auto;
+      -webkit-mask-image: radial-gradient(ellipse 75% 80% at 50% 55%, #000 55%, transparent 100%);
+              mask-image: radial-gradient(ellipse 75% 80% at 50% 55%, #000 55%, transparent 100%);
+    }
+
+    figcaption {
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--asche);
+    }
+
+    /* Beschreibung */
+    .beschreibung {
+      max-width: 36rem;
+      margin: 0 auto;
+      text-align: left;
+      hyphens: auto;
+    }
+
+    .beschreibung .schluss {
+      display: block;
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+    }
+
+    footer {
+      padding: 2rem 1.5rem 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--asche);
+    }
+
+    @media (max-width: 30rem) {
+      body { font-size: 1.125rem; }
+      main { padding-top: 2.5rem; }
+      .schriftzug { margin-bottom: 2rem; }
+    }
+  </style>
 </head>
 <body>
-  <h1>Willkommen!</h1>
-  <p>Meine Seite ist online.</p>
+  <main>
+    <h1>
+      <img class="schriftzug" src="bilder/schriftzug.png" alt="Scheidenkleister" width="1500" height="500">
+    </h1>
+
+    <figure>
+      <img class="bandfoto" src="bilder/bandfoto.jpg"
+           alt="Vulvarca und Clitorax in Corpse Paint vor dunkler Wand, eine davon mit Hörnern"
+           width="1590" height="2000">
+      <figcaption>Foto: Christian Steiner</figcaption>
+    </figure>
+
+    <p class="beschreibung">
+      Scheidenkleister ist ein im Schatten des Grazer Schlossbergs gegründetes Musikprojekt,
+      das seit 2017 Feminist Black Metal auskotzt und die Ruinen des Patriarchats in Brand setzt.
+      Hinter dem radikal-emanzipatorischen Kollektiv stehen Vulvarca (u.&nbsp;a. Satansgeige, Gebrüll)
+      und Clitorax (u.&nbsp;a. Todesorgel) – zwei Ikoninnen ihres Genres. Mit gnadenlosen Organ Blast Beats,
+      Corpse Paint und abgründigen Klanglandschaften zertrümmern sie misogyne Machtstrukturen.
+      Scheidenkleister glaubt nicht an Erlösung, sondern nur an Zerstörung als Akt der Befreiung
+      unter der Vorherrschaft von Satana.
+      <span class="schluss">Verbeugt euch!</span>
+    </p>
+  </main>
+
+  <footer>
+    © Scheidenkleister
+  </footer>
 </body>
 </html>
