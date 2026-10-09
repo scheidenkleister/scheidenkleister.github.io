@@ -94,9 +94,16 @@
       100% { text-shadow: 0 0 4px #fff, 1px -5px 11px #ffd000, -1px -12px 24px #ff8000, 1px -22px 42px #ff2a00, 0 -34px 66px #8b0000; }
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      .beschreibung .schluss { animation: none; }
+        @media (max-width: 30rem) {
+      body { font-size: 1.125rem; }
+      main { padding-top: 2.5rem; }
+      .schriftzug { margin-bottom: 2rem; }
+      footer { font-size: 0.95rem; }
+      footer .trenner { display: none; }
+      footer a { display: block; margin-top: 0.25rem; }
     }
+
+    footer .copy { white-space: nowrap; }
 
     footer {
       padding: 2rem 1.5rem 3rem;
@@ -151,7 +158,7 @@
   </main>
 
   <footer>
-    © Scheidenkleister 2026<span class="trenner">|</span><a href="mailto:kontakt@scheidenkleister.at">kontakt@scheidenkleister.at</a>
+    © Scheidenkleister 2026<span class="copy"> | </span><a href="mailto:scheidenkleister@riseup.net">scheidenkleister@riseup.net</a>
   </footer>
 </body>
 </html>
